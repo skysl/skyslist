@@ -1,0 +1,90 @@
+/*Make sure padding and flex commands work correctly*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/*Font definitions*/
+@font-face {
+  font-family: 'Axis';
+  src: url('Axis-Bold.otf') format('opentype');
+}
+
+/*Global/misc styles*/
+body {
+  background: #2B2B2B;
+  font-family: "Axis", "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*Flex boxes*/
+nav {
+  display: flex;
+  width: 100%;
+  padding: 6px;
+  background-image: url("Background@2x.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav main {
+  flex-grow: 1;
+  display: flex;
+  line-height: 0;
+}
+
+nav main p {
+  margin: 11px;
+  margin-left: 7px;
+  color: white;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*Styles for buttons*/
+nav button {
+  background: linear-gradient(rgba(255,255,255,0.5),rgba(179,179,179,0.5));
+  width: 21px;
+  height: 21px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+nav button:active {
+  background: linear-gradient(rgba(235,235,235,0.5),rgba(149,149,149,0.5));
+}
+
+nav button:hover article {
+  opacity: 0.7;
+}
+
+nav button:active main {
+  opacity: 1;
+}
+
+button article {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  image-rendering: pixelated;
+}
+
+/*Styles for icons*/
+button article.Menu {
+  background-image: url("Menu@2x.png");
+}
+
+button article.Add {
+  background-image: url("Add@2x.png");
+}
