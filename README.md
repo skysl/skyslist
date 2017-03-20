@@ -26,8 +26,8 @@ npm install
 
 And then to start the app:
 
-`yarn start`
+```yarn start```
 
 Or:
 
-`npm start`
+```npm start```
