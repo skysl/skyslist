@@ -11,7 +11,7 @@ html, body {
 /*Font definitions*/
 @font-face {
   font-family: 'Axis';
-  src: url('Axis-Bold.otf') format('opentype');
+  src: url('../Fonts/Axis-Bold.otf') format('opentype');
 }
 
 /*Global/misc styles*/
@@ -26,10 +26,11 @@ nav {
   display: flex;
   width: 100%;
   padding: 6px;
-  background-image: url("Background@2x.png");
+  background-image: url("../Assets/Background@2x.png");
   background-size: cover;
   background-position: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  height: 33px;
 }
 
 nav main {
@@ -64,7 +65,7 @@ nav button:active {
   background: linear-gradient(rgba(235,235,235,0.5),rgba(149,149,149,0.5));
 }
 
-nav button:hover article {
+nav button:hover div {
   opacity: 0.7;
 }
 
@@ -72,7 +73,7 @@ nav button:active main {
   opacity: 1;
 }
 
-button article {
+button div {
   width: 100%;
   height: 100%;
   background-position: center;
@@ -81,10 +82,10 @@ button article {
 }
 
 /*Styles for icons*/
-button article.Menu {
-  background-image: url("Menu@2x.png");
+button .Menu {
+  background-image: url("../Assets/Menu@2x.png");
 }
 
-button article.Add {
-  background-image: url("Add@2x.png");
+button .Add {
+  background-image: url("../Assets/Add@2x.png");
 }
